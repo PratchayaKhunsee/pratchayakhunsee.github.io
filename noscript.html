@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratchaya Khunsee's Github Pages</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="images/aws.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="images/firebase.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="images/flutter.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="images/gcp.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="images/line.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="images/javascript.svg" as="image" type="image/svg+xml" />
+    <link rel="preload" href="images/nodejs.svg" as="image" type="image/svg+xml" />
+    <style>
+        /* .prompt-thin {
+            font-family: "Prompt", serif;
+            font-weight: 100;
+            font-style: normal;
+        }
+
+        .prompt-extralight {
+            font-family: "Prompt", serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .prompt-light {
+            font-family: "Prompt", serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .prompt-regular {
+            font-family: "Prompt", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .prompt-medium {
+            font-family: "Prompt", serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .prompt-semibold {
+            font-family: "Prompt", serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .prompt-bold {
+            font-family: "Prompt", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .prompt-extrabold {
+            font-family: "Prompt", serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        .prompt-black {
+            font-family: "Prompt", serif;
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        .prompt-thin-italic {
+            font-family: "Prompt", serif;
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        .prompt-extralight-italic {
+            font-family: "Prompt", serif;
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        .prompt-light-italic {
+            font-family: "Prompt", serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .prompt-regular-italic {
+            font-family: "Prompt", serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .prompt-medium-italic {
+            font-family: "Prompt", serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .prompt-semibold-italic {
+            font-family: "Prompt", serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .prompt-bold-italic {
+            font-family: "Prompt", serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .prompt-extrabold-italic {
+            font-family: "Prompt", serif;
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        .prompt-black-italic {
+            font-family: "Prompt", serif;
+            font-weight: 900;
+            font-style: italic;
+        } */
+
+        .playwrite-it-moderna {
+            font-family: "Playwrite IT Moderna", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        :root {
+            font-family: "Prompt", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .--no-script-- {
+            display: block;
+            background-color: #d00;
+            color: #fff;
+            /* background-color: #808080;
+            color: #ffffff; */
+            padding: 1rem;
+            text-align: center;
+            user-select: none;
+        }
+
+
+        .pages {
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-sizing: content-box;
+            overflow: hidden;
+        }
+
+        .pages>* {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .pages>*>* {
+            width: 100%;
+        }
+
+        .pages>*>.scrollable {
+            overflow: scroll;
+            flex-grow: 1;
+        }
+
+        .pages>*>.scrollable>div {
+            width: 100%;
+            min-height: 100%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .mono,
+        .mono.c0 {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+        .mono.c100 {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        .mono.c90 {
+            background-color: #101010;
+            color: #ffffff;
+        }
+
+        .mono.c75 {
+            background-color: #202020;
+            color: #ffffff;
+        }
+
+        .mono.c50 {
+            background-color: #808080;
+            color: #ffffff;
+        }
+
+        .mono.c25 {
+            background-color: #C0C0C0;
+            color: #000000;
+        }
+
+        .mono.c10 {
+            background-color: #E0E0E0;
+            color: #000000;
+        }
+
+        img.mono,
+        svg.mono {
+            filter: grayscale(100%);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: #FFF solid;
+        }
+
+        nav>* {
+            margin: 0;
+            user-select: none;
+        }
+
+        nav>:not(:first-child) {
+            border-left: #FFF solid;
+        }
+
+        nav a {
+            padding: 1rem;
+            min-width: 2.5rem;
+            text-align: center;
+        }
+
+        
+
+        nav a:link,
+        nav a:visited,
+        nav a:active,
+        nav a:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #00000080;
+        }
+
+        nav a:active {
+            background-color: #00000020;
+        }
+
+        nav .title {
+            text-align: center;
+            flex-grow: 2;
+            font-family: "Playwrite IT Moderna", cursive;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .mono.c100 nav a:hover,
+        .mono.c90 nav a:hover,
+        .mono.c75 nav a:hover {
+            background-color: #FFFFFF80;
+        }
+
+        .mono.c100 nav a:active,
+        .mono.c90 nav a:active,
+        .mono.c75 nav a:active {
+            background-color: #FFFFFF20;
+        }
+
+        ui.expertise-showcase {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+
+        ui.expertise-showcase li {
+            display: block;
+            position: relative;
+        }
+
+        ui.expertise-showcase li span {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            user-select: none;
+            transition: opacity 0.5s;
+            opacity: 0;
+            background-color: #808080;
+            color: #ffffff;
+        }
+
+        ui.expertise-showcase li:hover span {
+            opacity: 1;
+        }
+
+        a:link,
+        a:visited,
+        a:active,
+        a:hover {
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body class="mono c100">
+    <main class="pages">
+        <section id="en">
+            <noscript>
+                <div class="--no-script--">Javascript disabled. This website may not work properly.</div>
+            </noscript>
+            <nav>
+                <h1 class="title">Pratchaya Khunsee</h1>
+                <a href="#th">ไทย</a>
+                <a href="#en">ENG</a>
+            </nav>
+            <div class="scrollable">
+                <div>
+                    <h1>Pratchaya Khunsee's Github Website</h1>
+                    <h2>Made for showcasing the author's app development expertise. Watch the <a href="https://github.com/PratchayaKhunsee">Github</a> profile link for consideration.</h2>
+                    <h3>Experienced with these app development technologies</h3>
+                    <div>
+                        <ui class="expertise-showcase">
+                            <li><img src="images/flutter.svg" /><span>Flutter</span></li>
+                            <li><img src="images/javascript.svg" /><span>JavaScript</span></li>
+                            <li><img src="images/nodejs.svg" /><span>Node.js</span></li>
+                            <li><img src="images/firebase.svg" /><span>Firebase</span></li>
+                            <li><img src="images/gcp.svg" /><span>Google Cloud Platform</span></li>
+                            <li><img src="images/aws.svg" /><span>Amazon Web Service</span></li>
+                            <li><img src="images/line.svg" /><span>Line API</span></li>
+                        </ui>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="th">
+            <noscript>
+                <div class="--no-script--">เว็บไซต์อาจทำงานไม่สมบูรณ์ เนื่องจากจาวาสคริปต์ถูกปิดอยู่</div>
+            </noscript>
+            <nav>
+                <h1 class="title">Pratchaya Khunsee</h1>
+                <a href="#th">ไทย</a>
+                <a href="#en">ENG</a>
+            </nav>
+            <div class="scrollable">
+                <div>
+                    <h1>เว็บไซต์ของ Pratchaya Khunsee</h1>
+                    <h2>จัดทำขึ้นเพื่อแสดงทักษะการพัฒนาซอฟต์แวร์ของผู้จัดทำ สามารถรับชมผลงานที่บัญชี <a href="https://github.com/PratchayaKhunsee">Github</a> ได้เลยครับ</h2>
+                    <h3>มีประสบการณ์เกี่ยวกับเทคโนโลยีพัฒนาแอพลิเคชันดังต่อไปนี้</h3>
+                    <div>
+                        <ui class="expertise-showcase">
+                            <li><img src="images/flutter.svg" /><span>Flutter</span></li>
+                            <li><img src="images/javascript.svg" /><span>JavaScript</span></li>
+                            <li><img src="images/nodejs.svg" /><span>Node.js</span></li>
+                            <li><img src="images/firebase.svg" /><span>Firebase</span></li>
+                            <li><img src="images/gcp.svg" /><span>Google Cloud Platform</span></li>
+                            <li><img src="images/aws.svg" /><span>Amazon Web Service</span></li>
+                            <li><img src="images/line.svg" /><span>Line API</span></li>
+                        </ui>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
